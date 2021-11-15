@@ -1,0 +1,59 @@
+<!--
+  Said Sheck
+  October 31st 2021
+  Section AD
+  The following files laysout how exactly the Weather App is supposed to be
+  structured. Where well have two sections: one for the search part of the app
+  and the other for displaying the results of that said search.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600;800&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <section id="search-section" class="hidden">
+      <section id="title-container">
+        <h1>Weather App</h1>
+        <!--
+          image retrieved from clipartmax.com
+        -->
+        <img src="images/sun.png" alt="Image of Sun">
+      </section>
+      <section id="search-bar-container">
+        <input type="text" maxlength="5" placeholder="Enter 5 digit U.S Zipcode....">
+        <button type="button">Enter</button>
+      </section>
+    </section>
+    <section id="weather-results">
+      <nav>
+        <h2>City Name</h2>
+      </nav>
+      <section id="current-weather">
+        <section id="weather-head">
+          <!--
+            image will be retrived from openweathermap API
+          -->
+          <h3>Weather</h3>
+          <img id="icon" src="images/magnifying-glass.png" alt="provided by api">
+        </section>
+        <section id="weather-info-container">
+          <ul>
+            <li>Weather(F):  <span id="fahrenheit"> 80 deg</span></li>
+            <li>Weather(C):  <span id= "celsius"> 27 deg</span></li>
+          </ul>
+          <section id="weath-description">
+            <h4>Weather Description</h4>
+            <p>Weather Description will be provided by API</p>
+          </section>
+        </section>
+      </section>
+      <button id="back-button">Back</button>
+    </section>
+  </body>
+</html>

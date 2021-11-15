@@ -1,0 +1,145 @@
+/*
+ *Said Sheck
+ *October 31st 2021
+ *Section AD
+ *The following files laysout how exactly the Weather App is supposed to be
+  styled.Determing the pages layout and how big font sizes are supposed to appear
+  as well as the colors the page should use.
+*/
+body, button:hover, #current-weather {
+  background-color: #7251B5;
+  color: #FFFFFF;
+}
+
+body, input, button {
+  font-family: 'Baloo Da 2', cursive;
+}
+
+body,
+#search-section,
+#title-container,
+#search-bar-container,
+#weather-results,
+nav,
+#current-weather,
+#weather-head,
+#weather-info-container {
+  display: flex;
+}
+
+body, #search-section, #weather-results, #current-weather {
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  justify-content: center;
+  height: 100vh;
+}
+
+#search-section,
+#search-bar-container,
+#weather-results,
+#weather-info-container {
+  justify-content: space-evenly;
+}
+
+#search-section {
+  width: 40em;
+  height: 6em;
+  padding-top: 4em;
+}
+
+#title-container > img {
+  padding-top: 3.5em;
+  height: 6em;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+input {
+  width: 50ch;
+  padding-bottom: 4ch;
+  margin-right: 1em;
+}
+
+input, button, #weather-results, #current-weather {
+  border-radius: 10px;
+  border: #7251B5;
+  font-family: 'Baloo Da 2', cursive;
+}
+
+button:hover, #current-weather:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+button {
+  width: 8em;
+  height: 6em;
+}
+
+#weather-results {
+  width: 80%;
+  margin-top: 30px;
+  height: 60em;
+  background-color: #FFFFFF;
+  color: #7251B5;
+  display: none;
+}
+
+nav {
+  width: 100%;
+  justify-content: center;
+}
+
+nav > h2 {
+  font-size: 4.5em;
+}
+
+#current-weather {
+  height: 60%;
+  width: 70%;
+}
+
+#weather-results h3 {
+  font-size: 3em;
+}
+
+#icon {
+  height: 100px;
+  width: 100px;
+  padding-top: 40px;
+}
+
+#weather-info-container {
+  width: 100%;
+  margin-top: 0px;
+  justify-content: space-evenly;
+}
+
+#weather-info-container > ul {
+  font-size: 1.5em;
+  list-style: none;
+}
+
+#weath-description {
+  padding-top: 2em;
+  width: 25ch;
+}
+
+#weath-description > p {
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
+#weath-description > h4 {
+  font-size: 1.5em;
+}
+
+span {
+  font-size: 2em;
+}
