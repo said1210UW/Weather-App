@@ -152,8 +152,8 @@
 
     let errorMessage = document.createElement("h3");
     const STARTERROR = 24;
-    const ENDERROR = 39;
-    let message = "Error - " + (error["message"].substr(STARTERROR, ENDERROR)) +
+    const ENDERROR = 38;
+    let message = "Error - " + (error["message"].substring(STARTERROR, ENDERROR)) +
                   " Reload the page";
     // hardcoded 404 response not sure
     errorMessage.textContent = (message);
